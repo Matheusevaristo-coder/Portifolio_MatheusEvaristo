@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    line-height: 1.6;
+}
+
+header { background-color: rgba(0, 141, 218, 0.8); /* Cor azul com transparência */ color: white; text-align: center; padding: 1em 0; font-family: 'Montserrat', sans-serif; transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */ position: fixed; /* Cabeçalho fixo */ width: 100%; /* Largura completa */ top: 0; /* Fixo no topo */ z-index: 1000; /* Mantém o cabeçalho acima de outros elementos */
+}
+header:hover { background-color: rgba(0, 95, 153, 0.8); /* Tom mais escuro de azul ao passar o mouse, com transparência */ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */ }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cor dourada ao passar o mouse */
+}
+.perfil-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.perfil-img {
+    border-radius: 50%;
+    margin-right: 1.5em;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-info p {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
+main { padding-top: 80px; /* Espaço para o cabeçalho fixo */ max-width: 1000px; margin: auto; line-height: 1.8; }
+
+h1, h2, h3 {
+    margin: 1em 0 0.5em 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+th, td {
+    border: 1px solid #555; /* Borda cinza */
+    padding: 1em;
+    text-align: left;
+}
+
+th {
+    background-color: #333; /* Cabeçalho da tabela em cinza escuro */
+    font-family: 'Montserrat', sans-serif;
+}
+
+td img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+.competencia {
+    background-color: #333; /* Cor cinza escuro */
+    border: 1px solid #555; /* Borda cinza */
+    border-radius: 5px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Adicionei uma transição suave */
+}
+
+.competencia:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+.contato-container {
+    background-color: #222; /* Cor cinza escuro */
+    padding: 2em;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* Espaçamento entre elementos do formulário */
+}
+
+label {
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+input, textarea {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #000; /* Texto preto para campos de entrada */
+    background-color: #fff; /* Fundo branco para campos de entrada */
+}
+
+button {
+    padding: 0.8em;
+    background-color: #008DDA; /* Cor azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    background-color: #005f99; /* Tom mais escuro de azul ao passar o mouse */
+}
+
+footer {
+    background-color: #008DDA; /* Cor azul */
+    color: white;
+    text-align: center;
+    padding: 0.5em 0; /* Reduzi o padding para deixar o rodapé mais fino */
+    font-family: 'Montserrat', sans-serif;
+}
+
